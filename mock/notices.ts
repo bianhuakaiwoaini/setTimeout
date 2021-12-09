@@ -3,6 +3,7 @@ import { number } from 'yargs'
 export default {
     // 支持值为 Object 和 Array
     'GET /api/users': (req:Request,res:Response)=>{
+        
         function fn(){
             if(req.query.time=="5"){
                 return res.end('ok')
